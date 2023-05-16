@@ -1,10 +1,12 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { useState, useEffect } from "react"
+import { useState, useRef, useEffect } from "react"
+import {v4 as uuidv4} from 'uuid';
 
 export default function Question(props){
     const [selected, setSelected] = useState(null)
-    const {data} = props
-
+    const [questionId] = useState(()=> uuidv4())
+    const {data, saveAnswer} = props
     function select(e){
         setSelected(prevSelected =>{
             if (prevSelected) prevSelected.classList.remove('selected')
@@ -12,6 +14,21 @@ export default function Question(props){
             return e.target
         })
     }
+
+    useEffect(()=>{
+        if (selected){
+            saveAnswer({
+                    id: questionId,
+                    correctAnswerRef,
+                    selected,
+                    isCorrect: selected == correctAnswerRef.current
+                }
+            )
+        }
+    }, [selected])
+
+
+    const correctAnswerRef = useRef()
 
     return (
         <div className="quiz-item">
@@ -22,7 +39,9 @@ export default function Question(props){
                     <button className="button" onClick={select} key={index}>{incorrectAnswer}</button>
                 )
             } )}    
-            <button onClick={select}>{data.correct_answer}</button>
+            <button 
+                ref={correctAnswerRef}
+                onClick={select}>{data.correct_answer}</button>
             </div>
         </div>
     )
