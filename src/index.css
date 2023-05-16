@@ -1,0 +1,146 @@
+:root {
+  /* COLORS */
+  --dark-blue: #293264;
+  --regular-blue: #4D5B9E;
+  --light-blue: #D6DBF5;
+
+  /* FONTS */
+  --fs-big: 1.938rem;
+  --fs-medium: 1rem;
+  --fs-small: 0.625rem;
+
+  --ff-primary: 'Inter', sans-serif;
+  --ff-secondary: 'Lora', serif;
+
+  --fw-bold: 700;
+  --fw-regular:500;
+  --fw-primary:400;
+}
+
+/* GENERAL */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-primary);
+}
+
+#app {
+  min-height: 100vh;
+}
+
+img,
+picture {
+  max-height: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/** UTILS */
+
+
+
+/* INTRO PAGE */
+
+.intro-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-big);
+  color: var(--dark-blue);
+}
+
+.game-description {
+  color: var(--dark-blue);
+}
+
+.start-quiz-cta {
+  background-color: var(--regular-blue);
+  color: var(--light-blue);
+  font-weight: var(--fw-regular);
+  padding: 1rem 3rem;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+/* QUIZ PAGE */
+
+.quiz-container {
+  padding: 3rem;
+  text-align: center;
+}
+
+.quiz-item {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  border-bottom: 1px solid var(--regular-blue);
+  padding-block: 1.3rem
+}
+
+.quiz-question {
+  font-size: var(--fs-medium);
+  color: var(--dark-blue);
+  font-family: var(--ff-secondary);
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  color: var(--dark-blue);
+  font-size: var(--fs-small);
+}
+
+.quiz-options button {
+  padding: .5rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid var(--dark-blue);
+}
+
+.quiz-options button.selected {
+  background-color: red;
+}
+
+.check-answers-btn {
+  font-weight: 600;
+  background-color: var(--dark-blue);
+  font-size: var(--fs-small);
+
+  padding: 1rem;
+  color: var(--light-blue);
+  border-radius: 8px;
+
+  margin-top: 20px;
+}
+
