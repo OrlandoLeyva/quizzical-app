@@ -28,6 +28,14 @@ export default function Quiz(){
         })
     }
 
+    function checkAnswers(){
+        for (const answer of answers){
+            console.log(answer.correctAnswerRef.current)
+            answer.correctAnswerRef.current.style = 'background-color: #94D7A2'
+            if (!answer.isCorrect) answer.selected.style = 'background-color: #F8BCBC'
+        }
+    }
+
     const triviaQuestions = trivia.map((data, index) => {
         return (
             <Question 
@@ -42,7 +50,11 @@ export default function Quiz(){
             {trivia.length > 0 ? (
                 triviaQuestions
             ) : <h3 className='loading-trivia'>Loading</h3>}
-            <button className='check-answers-btn'>Check Answers</button>
+            <button
+                onClick={checkAnswers} 
+                className='check-answers-btn'>
+                Check Answers
+            </button>
         </div>
     )
 }
