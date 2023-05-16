@@ -37,10 +37,6 @@ export default function Quiz(){
         )
     } )
 
-    useEffect(()=>{
-        console.log(answers)
-    })
-
     return (
         <div className="quiz-container">
             {trivia.length > 0 ? (

@@ -1,7 +1,6 @@
 import {Link} from 'react-router-dom'
 
 export default function Intro(){
-    console.log('intro')
     return (
         <div className="intro-page">
             <h1 className="title">Quizzical</h1>
