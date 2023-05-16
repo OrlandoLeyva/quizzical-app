@@ -129,7 +129,7 @@ a {
 }
 
 .quiz-options button.selected {
-  background-color: red;
+  background-color: var(--regular-blue);
 }
 
 .check-answers-btn {
