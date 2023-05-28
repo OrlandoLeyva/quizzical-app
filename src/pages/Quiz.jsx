@@ -30,7 +30,6 @@ export default function Quiz(){
 
     function checkAnswers(){
         for (const answer of answers){
-            console.log(answer.correctAnswerRef.current)
             answer.correctAnswerRef.current.style = 'background-color: #94D7A2'
             if (!answer.isCorrect) answer.selected.style = 'background-color: #F8BCBC'
         }
