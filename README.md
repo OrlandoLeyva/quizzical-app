@@ -11,19 +11,21 @@
 
 ## Overview
 
-### The Project
+## The Project
 
-![1685650509170](image/README-template/1685650509170.png)
+<pre class="vditor-reset" placeholder="" contenteditable="true" spellcheck="false"><p data-block="0"><img src="https://file+.vscode-resource.vscode-cdn.net/home/orlando/development%20area/MyDream/Frontend_carrer_path/projects/portfolio-projects/react/quizzical/image/README/1685658756022.png" alt="1685658756022"/></p></pre>
+
 
 Users should be able to:
 
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Generate a new piece of advice by clicking the dice icon
+- Validate answers and see the correct and incorrect ones
+- view the final result
 
 ### Links
 
-- Live Site URL: [Advice generator](https://advice-generator-orlando.netlify.app/)
+- Live Site URL: [Quizzical](https://advice-generator-orlando.netlify.app/)
 
 ## My process
 
@@ -32,8 +34,8 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
+- React.js
 
 ## Author
 
