@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { useState, useRef, useEffect } from "react"
+
 import {v4 as uuidv4} from 'uuid';
 import he from 'he'
 
@@ -17,6 +18,7 @@ export default function Question(props){
         })
     }
 
+    // console.log('rendering button')
     useEffect(()=>{
         if (selected){
             saveAnswer({
@@ -43,8 +45,6 @@ export default function Question(props){
 
         setRandomAnswers(randomAnswers)
     }, [])
-
-    console.log(data.correct_answer)
 
     const correctAnswerRef = useRef()
 
