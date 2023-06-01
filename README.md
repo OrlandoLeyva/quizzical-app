@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Quizzical](https://advice-generator-orlando.netlify.app/)
+- Live Site URL: [Quizzical](https://quizzical-app-orlando.netlify.app/)
 
 ## My process
 
