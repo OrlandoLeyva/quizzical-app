@@ -1,20 +1,10 @@
-# Advice generator app solution
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
+# Quizzical
 
 ## Overview
 
 ## The Project
 
 <pre class="vditor-reset" placeholder="" contenteditable="true" spellcheck="false"><p data-block="0"><img src="https://file+.vscode-resource.vscode-cdn.net/home/orlando/development%20area/MyDream/Frontend_carrer_path/projects/portfolio-projects/react/quizzical/image/README/1685658756022.png" alt="1685658756022"/></p></pre>
-
 
 Users should be able to:
 
